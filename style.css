@@ -120,6 +120,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    align-items: center;
 }
 
 .btn {
@@ -147,6 +148,17 @@ body {
     background: rgba(255, 255, 255, 0.08);
     color: var(--text-main);
     border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.btn-link {
+    background: rgba(255,255,255,0.08);
+    color: var(--text-main);
+    border: 1px solid rgba(255,255,255,0.14);
+}
+
+.btn-link:hover {
+    color: var(--accent);
+    border-color: rgba(56,189,248,0.5);
 }
 
 .hero-visual {
@@ -424,6 +436,11 @@ main {
 
     .skills-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero-actions .btn {
+        width: auto;
+        min-width: 140px;
     }
 }
 
